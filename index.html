@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Mahasiswa</title>
+    
+    <style>
+        /* Elemen Desain: Mengubah warna background halaman dan warna teks */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #d87cb2; /* Warna background lembut */
+            color: #090202; /* Warna teks gelap */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #4b0435; /* Warna biru cerah untuk heading */
+            border-bottom: 2px solid #2d0316;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .action-button {
+            background-color: #8b1e53; /* Warna hijau untuk tombol */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            /* Tambahan: animasi ringan saat hover */
+            transform: scale(1);
+        }
+
+        .action-button:hover {
+            background-color: #218838;
+            transform: scale(1.05); /* Sedikit membesar saat disentuh mouse */
+        }
+        
+        /* Gaya tambahan untuk teks keterangan di bawah tombol */
+        .keterangan {
+            margin-top: 10px;
+            font-style: italic;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>AZIZA FIRDAUS</h1>
+        
+        <p>Halo! Saya Aziza Firdaus, seorang mahasiswa yang sedang menempuh pendidikan di Universitas Teknologi Bandung. Saat ini, saya fokus mendalami topik pengembangan web dan kecerdasan buatan. Saya percaya bahwa teknologi dapat membawa perubahan positif yang signifikan dalam kehidupan sehari-hari.</p>
+
+        <p>Proyek ini adalah implementasi sederhana dari persyaratan tugas yang menggabungkan HTML untuk struktur, CSS untuk estetika, dan JavaScript untuk interaktivitas dasar. Dengan desain bersih dan minimalis, fokus utama halaman ini adalah pada konten profil singkat dan fungsi tombol interaktif.</p>
+
+        <p>Selain fokus pada studi, saya juga aktif dalam beberapa kegiatan organisasi kampus yang berkaitan dengan jurusan saya yaitu Teknik Informatika. Saya selalu terbuka untuk kolaborasi dan belajar hal baru. Silakan klik tombol di bawah untuk melihat data diri saya.</p>
+
+        <hr>
+
+        <button class="action-button" onclick="tampilkanBiodata()">
+            Here We Go!
+        </button>
+
+        <p class="keterangan">Klik tombol di atas untuk berkenalan</p>
+
+    </div>
+
+    <script>
+        // Data Biodata Anda
+        const nama = "Aziza Firdaus";
+        const nim = "23552011059";
+        const jurusan = "Teknik Informatika";
+        const email = "Azizafirdaus07@gmail.com";
+
+        // Fungsi JavaScript yang dijalankan ketika tombol diklik
+        function tampilkanBiodata() {
+            // Membuat pesan biodata
+            const pesanBiodata = 
+                "** BIODATA MAHASISWA **\n\n" +
+                "Nama: " + nama + "\n" +
+                "NIM: " + nim + "\n" +
+                "Jurusan: " + jurusan + "\n" +
+                "Email: " + email;
+            
+            // Menampilkan alert (Memenuhi syarat interaksi JS)
+            alert(pesanBiodata);
+        }
+    </script>
+
+</body>
+</html>
