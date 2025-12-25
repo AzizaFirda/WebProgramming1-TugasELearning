@@ -27,5 +27,4 @@ Website ini menampilkan informasi tentang biodata singkat saya.
 ### Tampilan Website
 ![Light Mode](screenshot-light.png)
 
-### Tampilan Biodata
 
